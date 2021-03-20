@@ -53,15 +53,12 @@ function moneyDelivery()
 
   for(let bill of availableBills)
   {
-    console.log(bill)
     if(askedMoney > 0)
     {
       div = Math.floor(askedMoney / bill.value);
-      console.log(div)
 
       if(div > bill.quantity)
       {
-        console.log(bill.quantity)
         bills = bill.quantity;
       }
       else
@@ -215,14 +212,12 @@ function showAvailableMoney(){
 
 function inputBills(){
   const typesOfBills = [100, 50, 20, 10, 5]
-  console.log(typesOfBills)
   for(bill in typesOfBills){
     availableBills.push(new Bill(typesOfBills[bill], 0))
   }
 
   const bills = document.querySelectorAll('.inputQuantity')
 
-  console.log(bills.values)
   bills.forEach((bill, index) => {
     bill.onfocus = function(){
       validateInput(bill)
