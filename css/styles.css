@@ -1,0 +1,131 @@
+*{
+    font-family: sans-serif;
+}
+
+body{
+    overflow: hidden;
+}
+
+.hero, .status, .money{
+    display: flex;
+}
+
+.status{
+    padding-left: 90px;
+}
+
+.money{
+    /* border: 1px solid red; */
+    margin-left: 70px;
+    height: 300px;
+    width: 800px;
+    justify-content: center;
+    align-items: center;
+}
+
+.money h2{
+    text-align: center;
+    font-size: 3em;
+}
+.cajero{
+    display: flex;
+    width: 300px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-container{
+    padding-top: 20px;
+}
+
+.results{
+    display: none;
+    position: absolute;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.bills-container{
+    /* border: 1px solid red; */
+    width: 900px;
+    height: 500px;
+    margin-left: 50px;
+}
+
+.show-vertical-scroll{
+    overflow-y: scroll;
+    overscroll-behavior-y: contain;
+    scroll-snap-type: y proximity;
+    background-color: red;
+}
+
+.bills-container div{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0 0 0;
+    gap: 10px;
+}
+
+.bills-container div:nth-child(1){
+    margin: 0;
+}
+
+.bills-container div img{
+    width: 120px;
+}
+
+.info{
+    display: none;
+    position: relative;
+    top: -100px;
+    padding: 20px;
+    width: 60%;
+}
+
+.info h2, #total{
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+#total {
+    color: green;
+}
+
+.info-total--bills{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card, .card-remaining{
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    /* justify-content: center; */
+    width: auto;
+}
+
+.card span, .card-remaining span{
+    font-size: 25px;
+    padding-left: 10px;
+}
+
+.card input, .card-remaining input{
+    margin-left: 15px;
+    font-size: 15px;
+    width: 60px;
+    text-align: center;
+}
+
+.fulfilled{
+    border: 3px solid green;
+}
+
+.invalid{
+    border: 3px solid red;
+}
+
+.billInfo, .billRemains{
+    width: 100px;
+}

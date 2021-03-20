@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Cajero automatico</title>
+  </head>
+<body>
+  <section class="hero">
+    <div class="cashier">
+      <img src="./images/automatic_cashier.gif" />
+      <div class="input-container">
+        <input type="number" id="askedMoneyInput" />
+        <input type="button" value="Extraer" id="extractMoney" />
+      </div>
+    </div>
+    <div class="status">
+      <div class="total-bill-remaining">
+        <h3 class="ux">Billetes disponibles</h3>
+        <article class="card-remaining">
+          <img src="./images/100.png" class="billRemains" /><input type="number" class="inputQuantity" />
+        </article>
+        <article class="card-remaining">
+          <img src="./images/50.png" class="billRemains" /><input type="number" class="inputQuantity" />
+        </article>
+        <article class="card-remaining">
+          <img src="./images/20.png" class="billRemains" /><input type="number" class="inputQuantity" />
+        </article>
+        <article class="card-remaining">
+          <img src="./images/10.png" class="billRemains" /><input type="number" class="inputQuantity" />
+        </article>
+        <article class="card-remaining">
+          <img src="./images/5.png" class="billRemains" /><input type="number" class="inputQuantity" />
+        </article>
+      </div>
+      <div class="money">
+        <h2 class="available-money">Dinero disponible: $0</h2>
+      </div>
+    </div>
+  </section>
+  <section class="results">
+    <div class="bills-container">
+      <div class="one-hundred">
+        <!-- <img src="./100.png" alt="one hundred"> -->
+      </div>
+      <div class="fifty">
+        <!-- <img src="./50.png" alt="fifty"> -->
+      </div>
+      <div class="twenty">
+        <!-- <img src="./20.png" alt="twenty"> -->
+      </div>
+      <div class="ten">
+        <!-- <img src="./10.png" alt="ten"> -->
+      </div>
+      <div class="five">
+        <!-- <img src="./5.png" alt="five"> -->
+      </div>
+    </div>
+    <div class="info">
+      <h2>Total de billetes entregados: <span id="total"></span></h2>
+
+      <div class="info-total--bill">
+        <article class="card">
+          <img src="./images/100.png" class="billInfo" alt=""><span id="quantityOneHundred" /></span>
+        </article>
+        <article class="card">
+          <img src="./images/50.png" class="billInfo" alt=""><span id="quantityFifty" /></span>
+        </article>
+        <article class="card">
+          <img src="./images/20.png" class="billInfo" alt=""><span id="quantityTwenty" /></span>
+        </article>
+        <article class="card">
+          <img src="./images/10.png" class="billInfo" alt=""><span id="quantityTen" /></span>
+        </article>
+        <article class="card">
+          <img src="./images/5.png" class="billInfo" alt=""><span id="quantityFive" /></span>
+        </article>
+      </div>
+    </div>
+  </section>
+  <script src="index.js">
+  </script>
+</body>
+</html>
